@@ -1,4 +1,7 @@
 ﻿
+<!--<script src="customjs.js"></script>-->
+
+
 @{
     ViewBag.Title = "Unser Produktportfolio";
 }
@@ -10,26 +13,57 @@
 
  <div class="row">    
     <div class="col-md-4">
-        <h2>Modul 1</h2>
-        <p>
-            Hier steht die Beschreibung des ersten Moduls.
-        </p>
+        <button id="prouctModule" onclick="manipulateProductModule()">
+            <h2>Modul 1</h2>
+        </button>
+        <div id="moduleDescription" style="display:none">
+            <p>
+                Hier steht die Beschreibung des ersten Moduls.
+            </p>
+        </div>
     </div>
     
     
-    <div class="col-md-4">
-        <h2>Modul 2</h2>
-        <p>
-            Hier steht die Beschreibung des zweiten Moduls.
-        </p>
-    </div>
+    
+     <div class="col-md-4">
+         <button id="prouctModule" onclick="alert('clicked')">
+             <h2>Modul 2</h2>
+         </button>
+         <div id="moduleDescription" style="display:none">
+             <p>
+                 Hier steht die Beschreibung des zweiten Moduls.
+             </p>
+         </div>
+     </div>
     
     
     <div class="col-md-4">
+    <button id="prouctModule" onclick="alert('clicked')">
         <h2>Modul 3</h2>
+    </button>
+    <div id="moduleDescription" style="display:none">
         <p>
             Hier steht die Beschreibung des dritten Moduls.
         </p>
     </div>
 </div>
-   
+</div>
+
+<script>/*
+    $(document).ready(function () {
+        //$('#prouctModule').on('click', manipulateProductModule());
+        $('productModule').click(function () {
+            $('div:first').toggle();
+        })
+    })*/
+
+    function manipulateProductModule() {
+        var element = document.getElementById("moduleDescription");
+        if (element.style.display === "none") {
+            element.style.display = "block";
+        }
+        else {
+            element.style.display = "none";
+        }
+    }
+</script>
