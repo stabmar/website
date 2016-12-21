@@ -1,7 +1,7 @@
 ﻿@{
     ViewBag.Title = "Unser Produktportfolio";
 }
-
+@Styles.Render("~/Content/Product.css");
 <div class="jumbotron">
     <h2>@ViewBag.Title</h2>
     <p>Stellen Sie sich ihr individueles Paket zusammen und lassen Sie sich einen Kostenvoranschlag per Mail zukommen!</p>
@@ -9,10 +9,10 @@
 
  <div class="row">    
     <div class="col-md-4">
-        <button class="prouctModule">
+        <button class="productModule" onclick="changeVisibility(1)">
             <h2>Modul 1</h2>
         </button>
-        <div class="moduleDescription" style="display:none">
+        <div class="moduleDescription" id="1">
             <p>
                 Hier steht die Beschreibung des ersten Moduls.
             </p>
@@ -20,27 +20,26 @@
     </div>
     
     
-    
      <div class="col-md-4">
-         <button class="prouctModule">
+         <button class="productModule">
              <h2>Modul 2</h2>
          </button>
-         <div class="moduleDescription" id="2" style="display:none">
+         <div class="moduleDescription" id="2">
              <p>
                  Hier steht die Beschreibung des zweiten Moduls.
              </p>
          </div>
      </div>
     
-    
     <div class="col-md-4">
-    <button class="prouctModule">
+    <button class="productModule">
         <h2>Modul 3</h2>
     </button>
-    <div class="moduleDescription" id="3" style="display:none">
+    <div class="moduleDescription" id="3">
         <p>
             Hier steht die Beschreibung des dritten Moduls.
         </p>
     </div>
 </div>
 </div>
+
