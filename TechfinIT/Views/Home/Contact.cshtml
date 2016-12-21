@@ -1,8 +1,35 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+
+@Styles.Render("~/Content/Contact.css");
+
+<h2>Bleiben Sie mit uns in Kontakt !</h2>
+<h3>Senden sie uns eine Nachricht mit Ihrem anliegen und wir melden uns schnellstmöglich bei Ihnen</h3><br>
+
+<form id="contactForm" name="Contact Form" action="" style="display:inline">
+    <div class="yourName">
+        Ihr Name:<br>
+        <input type="text" name="yourName"><br>
+    </div>
+    <div class="emailAdress">
+        Ihre Emailadresse:<br>
+        <input type="email" name="email"><br>
+    </div>
+    <div class="subject">
+        Betreff:<br>
+        <input type="text" name="subject"><br>
+    </div><br>
+    <div class="message">
+        Ihre Nachricht:
+        <input type="text" name="message"><br>
+    </div>
+    <div id="sendButton">
+        <button id="sendMessage">
+            <h3> Send </h3>
+        </button>
+    </div>
+</form> 
 
 <address>
     One Microsoft Way<br />
