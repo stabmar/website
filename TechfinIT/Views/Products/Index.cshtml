@@ -1,6 +1,4 @@
-﻿
-<!--<script src="customjs.js"></script>-->
-
+﻿<!--<script src="customjs.js"></script>-->
 
 @{
     ViewBag.Title = "Unser Produktportfolio";
@@ -49,13 +47,18 @@
 </div>
 </div>
 
-<script>/*
+<script>
     $(document).ready(function () {
-        //$('#prouctModule').on('click', manipulateProductModule());
-        $('productModule').click(function () {
-            $('div:first').toggle();
-        })
-    })*/
+        // Event-Handler: Module-Button was clicked
+        $('prouctModule').click(function () {
+            alert('clicked');
+            var property = 
+            if ($('div:first').css(style.display) === 'none') {
+
+            }
+            $(':#moduleDescription').show();
+        });
+    }
 
     function manipulateProductModule() {
         var element = document.getElementById("moduleDescription");
@@ -66,4 +69,5 @@
             element.style.display = "none";
         }
     }
+
 </script>
