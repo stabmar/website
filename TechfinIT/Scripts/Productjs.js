@@ -2,6 +2,6 @@
 $(document).ready(function () {
     alert('Dokument ist fertig geladen');
     $('.productModuleButton').click(function () {
-        $('.moduleDescription').toggle('slow');
+        $(this).next('.moduleDescription').toggle('slow');
     })
 })
