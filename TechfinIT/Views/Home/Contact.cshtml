@@ -4,43 +4,31 @@
 
 @Styles.Render("~/Content/Contact.css")
 
+
 <div class="container">
-    <h2>Bleiben Sie mit uns in Kontakt !</h2>
-    <h3>Senden sie uns eine Nachricht mit Ihrem anliegen und wir melden uns schnellstmöglich bei Ihnen</h3><br>
-
-
     <div class="row">
-        <div class="col-md-4">
-            
-        </div>
-        <div class="col-md-4">
-
-        </div>
-        <div class="col-md-4">
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="input-group input-group.lg">
-                <input type="text" class="form-control input-lg" id="message" placeholder="Ihre Nachricht" />
+        <div class="row">
+            <div class="col-md-12" id="contactText">
+                <h2>Kontaktieren Sie Uns !</h2>
+                <h5>Schreiben Sie uns eine Nachricht und wir melden uns schnellstmöglich bei Ihnen</h5>
             </div>
         </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Name" />
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Email" />
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" placeholder="Betreff" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <textarea name="message" class="form-control" placeholder="Ihre Nachricht" rows="6"></textarea>
+            </div>
+        </div>
+        <button class="btn btn-primary"> Nachricht senden </button> 
     </div>
-    <button class="btn-primary">
-        Nachricht senden
-    </button>
 </div>
-
-
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
-
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
