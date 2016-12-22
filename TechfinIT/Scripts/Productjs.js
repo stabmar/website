@@ -1,5 +1,21 @@
 ﻿// This Javascript is ment to define some additional js methods.
+$(document).unload
+/*
+$(document).ready(function () {
+    
+    $('.productModuleButton').click(function () {
+        $('.moduleDescription').show();
+    })
+})
+*/
 
+$(document).ready(function () {
+    document.addEventListener("click", function () {
+        document.getElementById('1').hide();
+    })
+})
+
+/*
 $(document).ready(function () {
     //Event-Handler: Changes display value for product description
     $('button.productModule').click(function () {
@@ -22,4 +38,4 @@ function changeVisibility(id) {
     else {
         $(e).css(style.display) = "none";
     }
-}
+}*/

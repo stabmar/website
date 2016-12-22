@@ -1,14 +1,22 @@
 ﻿/*This CSS is ment to style the prodct website.*/
 
-div.moduleDescription {
-    display: none !important;
-    color: inherit !important;
-    background-color: #fafafa !important;
-}
-
-button {
+div.productModule {
     color: inherit !important;
     background-color: #fafafa !important;
     border: thin !important;
     margin: auto !important;
 }
+
+button.productModuleButton {
+    color: inherit !important;
+    background-color: #fafafa !important;
+    border: thin !important;
+    margin: auto !important;
+}
+/*
+div.moduleDescription {
+    display: none !important;
+    color: inherit !important;
+    background-color: #fafafa !important;
+}
+*/

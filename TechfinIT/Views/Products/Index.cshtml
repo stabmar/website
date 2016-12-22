@@ -9,19 +9,21 @@
 
  <div class="row">    
     <div class="col-md-4">
-        <button class="productModule" onclick="changeVisibility(1)">
-            <h2>Modul 1</h2>
-        </button>
-        <div class="moduleDescription" id="1">
-            <p>
-                Hier steht die Beschreibung des ersten Moduls.
-            </p>
+        <div class="productModule" title="Module">
+            <button class="productModuleButton" onclick="document.getElementById('1').style.display = 'block'">
+                <h2>Modul 1</h2>
+            </button>
+            <div class="moduleDescription" title="description" id="1">
+                <p>
+                    Hier steht die Beschreibung des ersten Moduls.
+                </p>
+            </div>
         </div>
     </div>
     
     
      <div class="col-md-4">
-         <button class="productModule">
+         <button class="productModuleButton">
              <h2>Modul 2</h2>
          </button>
          <div class="moduleDescription" id="2">
@@ -30,16 +32,4 @@
              </p>
          </div>
      </div>
-    
-    <div class="col-md-4">
-    <button class="productModule">
-        <h2>Modul 3</h2>
-    </button>
-    <div class="moduleDescription" id="3">
-        <p>
-            Hier steht die Beschreibung des dritten Moduls.
-        </p>
-    </div>
 </div>
-</div>
-
