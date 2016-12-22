@@ -4,7 +4,8 @@
 
 input,
 textarea,
-button
+button,
+iframe
 {
     margin-top:15px;
     max-width:100%;
@@ -12,4 +13,8 @@ button
 
 button{
     float:right;
+}
+
+iframe{
+    
 }
