@@ -1,4 +1,4 @@
-﻿/*This CSS is ment to style the prodct website.*/
+﻿/*This CSS is ment to style Content/Product.css*/
 
 div.productModule {
     color: inherit !important;
@@ -7,16 +7,25 @@ div.productModule {
     margin: auto !important;
 }
 
+#productMouleContainer {
+    position: relative;
+    display: inline-block !important;
+    background-color: #fafafa !important;
+    padding: 0px !important;
+    border: none !important;
+    margin: 2px !important;
+}
+
 button.productModuleButton {
+    position: center !important;
     color: inherit !important;
     background-color: #fafafa !important;
     border: thin !important;
     margin: auto !important;
+    text-align: center !important;
 }
-/*
+
+
 div.moduleDescription {
-    display: none !important;
-    color: inherit !important;
-    background-color: #fafafa !important;
+    display: none;
 }
-*/
