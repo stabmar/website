@@ -1,73 +1,66 @@
-﻿<!--<script src="customjs.js"></script>-->
-
-@{
+﻿@{
     ViewBag.Title = "Unser Produktportfolio";
 }
+
+@Styles.Render("~/Content/Product.css")
 
 <div class="jumbotron">
     <h2>@ViewBag.Title</h2>
     <p>Stellen Sie sich ihr individueles Paket zusammen und lassen Sie sich einen Kostenvoranschlag per Mail zukommen!</p>
 </div>
 
- <div class="row">    
-    <div class="col-md-4">
-        <button id="prouctModule" onclick="manipulateProductModule()">
-            <h2>Modul 1</h2>
-        </button>
-        <div id="moduleDescription" style="display:none">
-            <p>
-                Hier steht die Beschreibung des ersten Moduls.
-            </p>
+<div class="container">
+    <div class="row">
+        <!--Module 1-->
+        <div class="col-xs-12 col-md-6 col-lg-6 overrideMargin">
+            <div class="productModule">
+                <h2>Modul 1</h2>
+                <p>Hier steht die Kurzbeschreibung des ersten Moduls.</p>
+                <div class="hiddenDescription" id="detailedDescription">
+                    <p>
+                        Sobald der Kunde / Besucher der Webseite den Button dieses Modules anklickt um mehr über das
+                        Moddul zu erfahren, wird das div mit entsprechender Detaibeschreibung aangezeigt.
+                    </p>
+                </div>
+                <button type="button" class="btn bnt-primary btn-sm">
+                    Mehr lesen
+                </button>
+            </div>
+        </div>
+
+        <!--Moodule 2-->
+        <div class="col-xs-12 col-md-6 col-lg-6 overrideMargin">
+            <div class="productModule">
+                <h2> - Modul 2 - </h2>
+                <p> - Kurzbeschreibung Modul 2 - </p>
+                <div class="hiddenDescription" id="detailedDescription">
+                    <p>
+                        - Detailbeschreibung Modul 2 -
+                    </p>
+                </div>
+                <button type="button" class="btn bnt-default btn-sm">
+                    Mehr lesen
+                </button>
+            </div>
         </div>
     </div>
-    
-    
-    
-     <div class="col-md-4">
-         <button id="prouctModule" onclick="alert('clicked')">
-             <h2>Modul 2</h2>
-         </button>
-         <div id="moduleDescription" style="display:none">
-             <p>
-                 Hier steht die Beschreibung des zweiten Moduls.
-             </p>
-         </div>
-     </div>
-    
-    
-    <div class="col-md-4">
-    <button id="prouctModule" onclick="alert('clicked')">
-        <h2>Modul 3</h2>
-    </button>
-    <div id="moduleDescription" style="display:none">
-        <p>
-            Hier steht die Beschreibung des dritten Moduls.
-        </p>
+
+    <!--New line of product modules-->
+    <div class="row">
+        <!--Module 3-->
+        <div class="col-xs-12 col-md-6 col-lg-6 overrideMargin">
+            <div class="productModule">
+                <h2> - Modul 3 - </h2>
+                <p> - Kurzbeschreibung Modul 3 - </p>
+                <div class="hiddenDescription" id="detailedDescription">
+                    <p>
+                        - Detailbeschreibung Modul 3 -
+                    </p>
+                </div>
+                <button type="button" class="btn bnt-default btn-sm">
+                    Mehr lesen
+                </button>
+            </div>
+        </div>
     </div>
 </div>
-</div>
-
-<script>
-    $(document).ready(function () {
-        // Event-Handler: Module-Button was clicked
-        $('prouctModule').click(function () {
-            alert('clicked');
-            var property = 
-            if ($('div:first').css(style.display) === 'none') {
-
-            }
-            $(':#moduleDescription').show();
-        });
-    }
-
-    function manipulateProductModule() {
-        var element = document.getElementById("moduleDescription");
-        if (element.style.display === "none") {
-            element.style.display = "block";
-        }
-        else {
-            element.style.display = "none";
-        }
-    }
-
-</script>
