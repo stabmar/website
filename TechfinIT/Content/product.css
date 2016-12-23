@@ -6,8 +6,6 @@
 }
 
 button {
-    background-color: #679bcc; /*TechfinIT blue*/
-    color: white !important; /*should be a general setting*/
     float: right;
     margin-top: 0;
     margin-bottom: 0;
@@ -23,11 +21,11 @@ div.overrideMargin {
     display: none;
 }
 
-div#productModule {
+div.productModule {
     color: inherit;
     background-color: #fafafa;
     border: thin;
-    margin: 2px;
+    margin: auto;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 45px;
