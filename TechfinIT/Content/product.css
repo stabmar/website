@@ -6,21 +6,17 @@
 }
 
 button {
-    background-color: #679bcc;
-    color: white;
+    background-color: #679bcc; /*TechfinIT blue*/
+    color: white !important; /*should be a general setting*/
     float: right;
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 0;
 }
 
-div#overwriteMargin {
+div.overrideMargin {
     padding-left: 0;
     padding-right: 30px;
-}
-
-#expand {
-
 }
 
 .hiddenDescription {

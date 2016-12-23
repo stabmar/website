@@ -2,6 +2,13 @@
 $(document).ready(function () {
     //alert('Dokument ist fertig geladen');
     $('button').click(function () {
-        $(this).prev('#detailedDescription').toggle('slow');
-    })
-})
+        $(this).prev('div.hiddenDescription').toggle('slow');
+    });
+    $('button').hover(function () {
+        $(this).css('background-color', '#409ADF');
+    },
+        function () {
+            $(this).css('background-color', '#679bcc');
+        });
+    
+});

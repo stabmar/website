@@ -1,0 +1,40 @@
+﻿/*
+    This file is ment to override all global style-settings respectively styles from bootstrap.css.
+    
+    Convention: 
+    - When overriding a style, take care to document where to find the original style within the bootstrap.css
+    - Document the purpose of your change 
+*/
+
+/*
+    Purpose:
+        Global adjustment of styles for primary buttons.
+    Source:
+        bootstrap.css: 3887
+*/
+.btn-primary {
+    color: #ffffff;
+    background-color: #679bcc;
+    border-color: #ffffff;
+}
+
+/*
+    Purpose:
+        Global adjustment of navigation-bar styles.
+    Source:
+        bootstrap.css: 5634*/
+.navbar-inverse {
+    background-color: #679bcc;
+    border-color: #006687;
+}
+
+/*
+    Purpose:
+        Global adjustment of navigation-bar styles.
+    Source:
+        bootstrap.css: 5690
+*/
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: none;
+}
